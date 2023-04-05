@@ -1,6 +1,6 @@
 const crypto = require("crypto");
 const algorithm = 'aes-256-ctr';
-const secretKey = 'vOVH6sdmpNWjRRIqCc7rdxs01lwHzfr3';
+const secretKey = process.env.CRYPTO_SECRETKEY;
 
 exports.error = function(message, status = 400) {
 
